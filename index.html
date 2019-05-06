@@ -1,0 +1,418 @@
+﻿<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>참참김치클럽</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <script type="text/javascript" src="jquery/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="jquery/jquery.bxslider.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.main_bn').bxSlider({
+                    auto:true,
+                    pause:5000,
+                    speed:300,
+                    slideWidth:2000
+                });
+            });
+            function all_menu(){
+                var Meun = document.getElementById("all_menu_in");
+                var but = document.getElementById("all_menu");
+                if(Meun.style.display == "none"){
+                    Meun.style.display = "block";
+                } else {
+                    Meun.style.display = "none";
+                }
+                if(but.classList.contains("on")){
+                    but.classList.remove("on");
+                } else{
+                    but.classList.add("on");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div class="header1">
+                    <div class="utill cf">
+                        <ul class="cf">
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">주문조회</a></li>
+                            <li><a href="#">장바구니</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header2">
+                    <div class="txt_left">
+                        <p>친철하게 상담해드립니다</p>
+                        <span>055&#45;324&#45;1031</span>
+                    </div>
+                    <h1><a href="#"><img src="img/logo.jpg"></a></h1>
+                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                </div>
+                <div class="header3">
+                    <div class="gnb cf">
+                        <div id="all_menu_in" style="display:none">
+                            <ul class="cf">
+                                <li><h4>김치류</h4></li>
+                                <li><a href="#">배추김치</a></li>
+                                <li><a href="#">셋트김치</a></li>
+                                <li><a href="#">썰어진김치</a></li>
+                                <li><a href="#">숙성김치</a></li>
+                                <li><a href="#">묵은지</a></li>
+                                <li><a href="#">우거지/시래기/된장국</a></li>
+                                <li><a href="#">동치미/양파김치</a></li>
+                                <li><a href="#">총각김치</a></li>
+                                <li><a href="#">깍두기</a></li>
+                                <li><a href="#">갓김치</a></li>
+                                <li><a href="#">백김치</a></li>
+                                <li><a href="#">나박물김치</a></li>
+                                <li><a href="#">열무김치</a></li>
+                                <li><a href="#">보쌈김치/대추김치/굴김치</a></li>
+                                <li><a href="#">파김치</a></li>
+                                <li><a href="#">고들빼기</a></li>
+                                <li><a href="#">장아찌,양념깻잎</a></li>
+                            </ul>
+                            <ul class="cf">
+                                <li><h4>김장양념류</h4></li>
+                                <li><a href="#">절임배추/김장김치양념</a></li>
+                                <li><a href="#">고추가루</a></li>
+                                <li><a href="#">통영굴</a></li>
+                                <li><a href="#">새우젓,멸치젓</a></li>
+                                <li><a href="#">고추장/된장/청국장/간장</a></li>
+                                <li><a href="#">영산포 홍어</a></li>
+                                <li><a href="#">천일염(소금)</a></li>
+                            </ul>
+                        </div>
+                        <button id="all_menu" onclick="all_menu()">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#">회사소개</a>
+                                <div class="li_in">
+                                    <a href="#">참참김치클럽</a>
+                                </div>
+                            </li>
+                            <li class="kimchi">
+                                <a href="#">김치제품</a>
+                                <div class="li_in">
+                                    <a href="#">배추김치</a>
+                                    <a href="#">셋트김치</a>
+                                    <a href="#">썰어진김치</a>
+                                    <a href="#">숙성김치</a>
+                                    <a href="#">묵은지</a>
+                                    <a href="#">우거지/시래기/된장국</a>
+                                    <a href="#">동치미/양파김치</a>
+                                    <a href="#">총각김치</a>
+                                    <a href="#">깍두기</a>
+                                    <a href="#">갓김치</a>
+                                    <a href="#">백김치</a>
+                                    <a href="#">나박물김치</a>
+                                    <a href="#">열무김치</a>
+                                    <a href="#">보쌈김치/대추김치/굴김치</a>
+                                    <a href="#">파김치</a>
+                                    <a href="#">고들빼기</a>
+                                    <a href="#">장아찌,양념깻잎</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">최근인기상품</a>
+                            </li>
+                            <li>
+                                <a href="#">추천상품</a>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                                <div class="li_in">
+                                    <a href="#">공지사항</a>
+                                    <a href="#">입금자 찾기</a>
+                                    <a href="#">상품문의</a>
+                                    <a href="#">1대1 문의</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="main_bn">
+                <div><a href="#"><img src="img/main_bn_1.png"></a></div>
+                <div><a href="#"><img src="img/main_bn_2.png"></a></div>
+                <div><a href="#"><img src="img/main_bn_3.png"></a></div>
+                <div><a href="#"><img src="img/main_bn_4.png"></a></div>
+            </div>
+            <section class="section1">
+                <div class="title">
+                    <h2>추천상품</h2>
+                    <span>참참김치클럽에서 추천하는 상품</span>
+                </div>
+                <ul class="kimchi_list cf">
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;2,551&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_1.jpg">
+                        <h3>배추김치&#40;김장김치&#41;</h3>
+                        </a>
+                        <p class="txt">참맛을 느낄 수 있는 포기김치</p>
+                        <p class="money">9,000원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;1,551&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_2.jpg">
+                        <h3>백김치</h3>
+                        </a>
+                        <p class="txt">속이 개운해지는 톡&#33; 쏘는 국물맛&#33;</p>
+                        <p class="money">9,000원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;1,651&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_3.jpg">
+                        <h3>총각김치</h3>
+                        </a>
+                        <p class="txt">아그작&#33; 익을수록 감칠맛이 풍부한</p>
+                        <p class="money">10,000원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;951&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_4.jpg">
+                        <h3>파김치</h3>
+                        </a>
+                        <p class="txt">매콤, 달콤 알싸한 밥도둑&#33;</p>
+                        <p class="money">19,000원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;951&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_5.jpg">
+                        <h3>부추김치</h3>
+                        </a>
+                        <p class="txt">고유한 감칠맛과 중부식 김치의 깔끔한맛</p>
+                        <p class="money">18,000원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;2,951&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_6.jpg">
+                        <h3>깍두기</h3>
+                        </a>
+                        <p class="txt">사각사각&#33; 매운맛을 골고루 버무린</p>
+                        <p class="money">7,500원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;1,551&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_7.jpg">
+                        <h3>동치미</h3>
+                        </a>
+                        <p class="txt">속까지 시원한 국물이 일품</p>
+                        <p class="money">26,000원</p>
+                    </li>
+                    <li>
+                        <p class="review">&#91;상품리뷰&#58;3,951&#93;</p>
+                        <a href="#">
+                            <img src="img/kimchi_img_8.jpg">
+                        <h3>갓김치</h3>
+                        </a>
+                        <p class="txt">사라진 내 입맛을 돌려줘!</p>
+                        <p class="money">12,000원</p>
+                    </li>
+                </ul>
+                <ul class="sub_bn cf">
+                    <li>
+                        <a href="#">
+                            <img src="img/sub_bn_1.png">
+                            <div class="txt_box txt_box1">
+                                <p>전라도 깨끗한 가정식 김치</p>
+                                <p>직접 재배 &#124; 제조 &#124; 판매</p>
+                                <p>드셔보시면 고객님이 먼저 그 수준을 압니다.<span>직접 드셔보시고 판단해 주시겠습니까?</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/sub_bn_2.png">
+                            <div class="txt_box txt_box2">
+                                <p>SET 김치 판매</p>
+                                <span>세트 상품 구매시<span>&#39;깻잎김치&#39;증정</span></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section2">
+                <h2>베스트 리뷰</h2>
+                <article class="view cf">
+                    <a href="#">
+                        <img src="img/review_1.jpg">
+                        <div class="txt_box">
+                            <p class="review_tit">맛잇어요. 역시</p>
+                            <p class="user">김희선</p>
+                            <div class="food_name cf">
+                                <img src="img/food_img_1.jpg">
+                                <div class="right">
+                                    <p>배추김치&#40;김장김치&#41;</p>
+                                    <span>리뷰 &#58; <span class="num">2,551</span></span>
+                                    <span>평점 &#58; <span class="num">4.9</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="img/review_2.jpg">
+                        <div class="txt_box">
+                            <p class="review_tit">깍두기 너무 맛있어요:&#41;</p>
+                            <p class="user">송향진</p>
+                            <div class="food_name cf">
+                                <img src="img/food_img_2.jpg">
+                                <div class="right">
+                                    <p>깍두기</p>
+                                    <span>리뷰 &#58; <span class="num">2,951</span></span>
+                                    <span>평점 &#58; <span class="num">4.9</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="img/review_3.jpg">
+                        <div class="txt_box">
+                            <p class="review_tit">생김치로도 너무 맛있고 반은 덜어서 일주일 정도 내놨더니 물건이네요 고등어 넣고 푹 끓여서 김치찜 해먹었는데 인생맛&#33;&#33; 육수랑 부침가루 섞어 전으로 부쳐도 김치가 너무 아삭하고 깊은 맛이 나요. 앞으로 배추김치는 레알김치에서 사먹는걸로 &#94;.&#94;</p>
+                            <p class="user">김성정</p>
+                            <div class="food_name cf">
+                                <img src="img/food_img_3.jpg">
+                                <div class="right">
+                                    <p>배추김치&#40;김장김치&#41;</p>
+                                    <span>리뷰 &#58; <span class="num">2,551</span></span>
+                                    <span>평점 &#58; <span class="num">4.9</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="img/review_4.jpg">
+                        <div class="txt_box">
+                            <p class="review_tit">김치를 사먹어본적이없어서... 고민하다 후기가 너무 좋아서 믿고 구매했는데.. 동치미 대박&#33;입니다</p>
+                            <p class="user">송향진</p>
+                            <div class="food_name cf">
+                                <img src="img/food_img_4.jpg">
+                                <div class="right">
+                                    <p>동치미</p>
+                                    <span>리뷰 &#58; <span class="num">1,551</span></span>
+                                    <span>평점 &#58; <span class="num">4.9</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="img/review_5.jpg">
+                        <div class="txt_box">
+                            <p class="review_tit">맛있어요</p>
+                            <p class="user">박미례</p>
+                            <div class="food_name cf">
+                                <img src="img/food_img_5.jpg">
+                                <div class="right">
+                                    <p>배추김치&#40;김장김치&#41;</p>
+                                    <span>리뷰 &#58; <span class="num">2,551</span></span>
+                                    <span>평점 &#58; <span class="num">4.9</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+            <section class="section3">
+                <span class="call_bn">참참김치클럽은 고객님의 건강을 최우선으로 생각합니다. <span>불편하신점, 궁금하신점 언제든 전화해서 상담 받아보세요.</span></span>
+                <ul class="help cf">
+                    <li class="call">
+                        <div class="call_num">
+                            <img src="img/call.png">
+                            <div class="num">
+                                <h3>고객센터이용문의</h3>
+                                <span>1566&#45;9957</span>
+                                <span>055&#45;324&#45;1031</span>
+                                <span>010&#45;3044&#45;4205</span>
+                            </div>
+                        </div>
+                        <div class="call_time">
+                            <span>평일 &#58; AM 09&#58;00&#126;PM 22&#58;00</span>
+                            <span>토요일 &#58; AM 09&#58;30&#126;PM 17&#58;00</span>
+                            <p>일요일,공휴일은 휴뮤입니다.<br>휴무일에는 고객게시판을 이용해주세요.</p>
+                        </div>
+                    </li>
+                    <li class="bank">
+                        <h3>무통장입금계좌안내<span>&#40;예금주:김남홍&#41;</span></h3>
+                        <ul class="bank_list">
+                            <li><img src="img/kb_bank.jpg"><span>856325&#45;01&#45;040034</span></li>
+                            <li><img src="img/nh_bank.png"><span>178246&#45;56&#45;043186</span></li>
+                            <li><img src="img/woori_bank.png"><span>1002&#45;036&#45;064317</span></li>
+                            <li><img src="img/keb_hana.jpg"><span>535&#45;910096&#45;46807</span></li>
+                            <li><img src="img/sin_bank.jpg"><span>110&#45;233&#45;098166</span></li>
+                            <li><img src="img/post.jpg"><span>613869&#45;02&#45;130542</span></li>
+                            <li><img src="img/busan_bank.jpg"><span>101&#45;2014&#45;4114&#45;05</span></li>
+                        </ul>
+                    </li>
+                    <li class="qna">
+                        <h3>무엇이 궁금하세요&#63;<a href="#"><img src="img/more.jpg"></a></h3>
+                        <ul class="qna_list">
+                            <li><a href="#">&bull; 교환/반품은 어떻게 해야하나요&#63;&#63;</a></li>
+                            <li><a href="#">&bull; 전화로 상품 주문도 가능한가요&#63;&#63;</a></li>
+                            <li><a href="#">&bull; 배송기간은 어떻게 되나요&#63;</a></li>
+                            <li><a href="#">&bull; 카드사에서 카드취소 확인이 안됩니다</a></li>
+                            <li><a href="#">&bull; 입금확인은 어떻게 되나요&#63;&#63;</a></li>
+                            <li><a href="#">&bull; 배송되지 않았다면 교환가능한가요&#63;</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <div class="footer_wrap cf">
+                    <ul class="utill cf">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <div class="footer_bottom cf">
+                        <h1>참참김치클럽</h1>
+                        <ul class="txt">
+                           <li>
+                               <p>공정거래 위원회 고시 제2000&#45;1호에 따른 사업자 등록번호 안내&#58; 615&#45;90&#45;34074</p>
+                            </li> 
+                            <li>
+                                <span>모든상사 </span>
+                                <span>대표자명&#58;김남홍 </span>
+                                <span>통신판매업신고번호 &#58; 2007&#45;경남김해&#45;0239호 </span>
+                                <address>주소 &#58; 경남 김해시 분성로 362 101호</address>
+                            </li>
+                            <li>
+                                <span>문의전화 : 055&#45;324&#45;1031, 010&#45;3044&#45;4205, 1566&#45;9957 </span>
+                                <span>FAX &#58; 055&#45;324&#45;1032 </span>
+                                <span>email&#58;sungkim6204&#64;hanmail.net </span>
+                            </li>
+                            <li>
+                                <p class="copyright">Copyrightⓒ참참김치클럽. All Rights Reserved.</p>
+                            </li>
+                            <li>
+                                <p>이 페이지에는 네이버에서 제공한 나눔글꼴이 적용되어 있습니다.</p>
+                                <p>이 페이지에는 ㈜위드이노베이션이 제공한 여기어때잘난서체가 적용되어 있습니다.</p>
+                            </li>
+                        </ul>
+                        <div class="img_a">
+                            <a href="#"><img src="img/image_escrow.png"></a>
+                            <a href="#"><img src="img/ftc_symbol.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
